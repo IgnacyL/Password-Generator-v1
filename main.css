@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(208deg 100% 25%) 11%,
+    hsl(202deg 100% 29%) 22%,
+    hsl(198deg 100% 33%) 33%,
+    hsl(196deg 100% 37%) 44%,
+    hsl(195deg 100% 40%) 56%,
+    hsl(194deg 100% 42%) 67%,
+    hsl(193deg 100% 45%) 78%,
+    hsl(192deg 100% 48%) 89%,
+    hsl(192deg 100% 50%) 100%
+  );
+}
+.container {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: skyblue;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid black;
+  background-color: transparent;
+  background-image: url("password.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.btn {
+  position: absolute;
+  top: 100px;
+  padding: 30px 150px;
+  border-radius: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(0.98);
+}
+.password {
+  position: absolute;
+  bottom: 200px;
+  min-height: 100px;
+  width: 500px;
+  overflow-wrap: break-word;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  word-wrap: break-word;
+  border: 2px solid black;
+}
+.password span {
+  text-align: center;
+  line-height: 100px;
+}
